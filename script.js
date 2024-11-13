@@ -1,22 +1,45 @@
-let a=100;
-// console.log(a);
-setTimeout(() =>{
-
-console.log(a);
-
-setTimeout(() => {
-  console.log(b+"Ntr2 second time but from inner setTimout");
-   }, 5000);
-
-},10000)
+// let a=new Date();
+// console.log(a.toDateString());
+// console.log(a.toTimeString());
+// console.log(a.toLocaleDateString());
 
 
-console.log("durga");
-console.log("bhavani");
+// console.log(date);
+// console.log(date.getDate());
+// console.log(date.getDay());
+// console.log(date.getHours());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getTime());
+
+// console.log(date.setDate(13));
+// console.log(date.setDate(11));
+// console.log(date.setMinutes(13));
 
 
-let b="NTR"
+// let a={
+//     id:1,
+//     age:23,
+//     name:"bhavani",
+//     details:function(){
+//         console.log(this.name);
+//     }
+// }
+// console.log(a.details);
 
-setTimeout(() =>{
-console.log(b+ " NTr1 is 5sec seTImeout");
-},6000)
+
+let a = {
+  id: 1,
+  age: 23,
+  name: "bhavani",
+
+  } 
+
+  let b= function(x){
+    let name="Kalisetti"
+  console.log(this.name+ "  "+x );
+};
+let c=b.call(a, [ "durga", "durga","8688724292",5,9,12222])
+console.log(c)
